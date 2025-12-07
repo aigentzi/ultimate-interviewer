@@ -1,0 +1,42 @@
+{
+  "name": "ultimate-interviewer",
+  "version": "1.0.0",
+  "description": "The Ultimate LiveKit Interview Agent - Multi-persona AI interview platform on LiveKit Cloud",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "agent": "node src/agents/voice-pipeline-agent.js",
+    "test": "node --test",
+    "setup": "node scripts/setup.js"
+  },
+  "keywords": [
+    "livekit",
+    "livekit-cloud",
+    "interview",
+    "ai-agent",
+    "voice-pipeline",
+    "multi-persona",
+    "xtrius"
+  ],
+  "author": "XTRIUS",
+  "license": "MIT",
+  "dependencies": {
+    "@livekit/rtc-node": "^0.10.0",
+    "livekit-server-sdk": "^2.6.0",
+    "livekit-client": "^2.5.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "js-yaml": "^4.1.0",
+    "openai": "^4.68.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
